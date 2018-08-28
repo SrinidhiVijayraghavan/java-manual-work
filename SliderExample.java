@@ -1,0 +1,32 @@
+package my;
+	import javax.swing.*;  
+	  
+	public class SliderExample extends JFrame{  
+	  
+	/**
+		 * 
+		 */
+		private static final long serialVersionUID = 1L;
+
+	public SliderExample() {  
+	  
+	JSlider slider = new JSlider(JSlider.HORIZONTAL, 0, 50, 25);  
+	slider.setMinorTickSpacing(2);  
+slider.setMajorTickSpacing(10);  
+	  
+	slider.setPaintTicks(true);  
+	slider.setPaintLabels(true);  
+	  
+	JPanel panel=new JPanel();  
+	panel.add(slider);  
+	add(panel);  
+	}  
+	  
+	public static void main(String s[]) {  
+	SliderExample frame=new SliderExample();  
+	frame.pack();  
+	frame.setVisible(true);  
+	  
+	}  
+	}  
+
