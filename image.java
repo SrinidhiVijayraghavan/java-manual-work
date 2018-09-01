@@ -1,22 +1,17 @@
-package applet;
-
-
 import java.awt.*;  
-
 import java.applet.*;  
   
   
-public class image extends Applet{
-
+public class DisplayImage extends Applet {  
   
-  Image picto;  
+  Image picture;  
   
   public void init() {  
-    picto = getImage(getCodeBase(),"imgeg.jpg");  
+    picture = getImage(getDocumentBase(),"sonoo.jpg");  
   }  
     
   public void paint(Graphics g) {  
-    g.drawImage(picto, 60,60, this);  
+    g.drawImage(picture, 30,30, this);  
   }  
- 
-}
+      
+  }  
