@@ -1,0 +1,19 @@
+import java.util.*;
+public class hash_table 
+{
+public static void main(String args[])
+{
+	  Hashtable<Integer,String> h = new Hashtable<Integer,String>();  
+	  h.put(189,"Dulquer Salman");  
+	  h.put(107,"Nivin Pauly");  
+	  h.put(145,"Vijay Devarkonda");  
+	  h.put(112,"Ranbir Kapoor");
+	  //h.put(173,"Sai");
+	  for(Map.Entry m:h.entrySet())
+	  {  
+	   System.out.println("\nID : "+m.getKey());
+	   System.out.println("Name : "+m.getValue());  
+	  }  
+}
+}
+
